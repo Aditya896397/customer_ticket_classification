@@ -1,0 +1,11 @@
+text,label
+"I was charged twice for my subscription",Billing
+"I cannot login to my account, password not accepted",Account Access
+"The product crashes when I try to open it",Technical Issue
+"How do I change my billing address?",Billing
+"Where can I find the user manual for the product?",Product Inquiry
+"I'm unhappy with the service, want a refund",Complaint
+"The app is slow and times out frequently",Technical Issue
+"I'd like to provide feedback on the new UI",Feedback
+"Please help, I forgot my password",Account Access
+"Is there an API to integrate with third-party tools?",Product Inquiry

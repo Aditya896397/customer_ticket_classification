@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/app
+  streamlit:
+    build: .
+    command: streamlit run dashboard/streamlit_app.py --server.port 8501 --server.address 0.0.0.0
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./:/app
+  mlflow:
+    image: mlflow/mlflow:latest
+    environment:
+      - MLFLOW_DEFAULT_ARTIFACT_ROOT=/mlartifacts
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./mlruns:/mlruns
